@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Space, Collapse, Tag, Switch } from 'antd';
+import { Button, Space, Collapse } from 'antd';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco, github } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
