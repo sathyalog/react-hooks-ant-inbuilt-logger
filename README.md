@@ -25,4 +25,4 @@ we will cover in the following fashion..
 
 a) Must Known Hooks
 
-useState hook - Learn useState hook how it works with values and function version of useState.
+useState hook - Learn useState hook how it works with values, objects, arrays and function version of useState.
