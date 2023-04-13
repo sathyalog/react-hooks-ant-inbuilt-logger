@@ -128,7 +128,7 @@ function HookUseState() {
           <Button onClick={decrementCount}>-</Button>
           <span>{count}</span>
           <Button onClick={incrementCount}>+</Button>
-          <Button onClick={updateState}>Change to github theme</Button>
+          <Button onClick={updateState}>Change theme</Button>
         </Space>
         List of <strong>themes</strong> are: {renderThemes}
         <Collapse defaultActiveKey={['0']} onChange={onChange}>
@@ -147,7 +147,7 @@ function HookUseState() {
         <Button onClick={decrementCount}>-</Button>
         <span>{count}</span>
         <Button onClick={incrementCount}>+</Button>
-        <Button onClick={updateState}>Change to github theme</Button><br />
+        <Button onClick={updateState}>Change theme</Button><br />
       </Space>
       <br /><br />
       List of <strong>themes</strong> are: {renderThemes}
