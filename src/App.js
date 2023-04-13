@@ -1,5 +1,6 @@
 import { useState, Suspense, useTransition } from 'react';
 import { Layout } from 'antd';
+import { ThemeProvider } from './ThemeContext';
 import Dashboard from './Dashboard';
 import Articles from './Articles';
 const { Content } = Layout;
@@ -8,7 +9,9 @@ function App() {
     <div className="App">
       <Content style={{ padding: '10px 50px' }}>
         <Suspense fallback={<BigSpinner />}>
-          <Router />
+          <ThemeProvider>
+            <Router />
+          </ThemeProvider>
         </Suspense>
       </Content>
     </div>
