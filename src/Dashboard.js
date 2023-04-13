@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Console, Hook, Unhook } from 'console-feed'
 import { Typography, Divider, Layout, Card, Space, Alert } from 'antd';
 import { Menu } from 'antd';
-import { CodeOutlined, SmileOutlined, EditOutlined } from '@ant-design/icons';
+import { CodeOutlined, SmileOutlined, BookOutlined, StopOutlined } from '@ant-design/icons';
 import HookUseState from './hooks/must-known-hooks/UseStateHook';
 import HookUseEffect from './hooks/must-known-hooks/UseEffectHook';
 const { Title } = Typography;
@@ -12,7 +12,7 @@ const items = [
   {
     label: 'Articles',
     key: 'articles',
-    icon: <EditOutlined />,
+    icon: <BookOutlined />,
   }]
 
 function Dashboard({ navigate }) {
@@ -27,10 +27,9 @@ function Dashboard({ navigate }) {
   }, [])
   return (
     <>
-      <Content style={{ padding: '10px 50px' }}>
+      <Content style={{ padding: '10px 50px', overflow: 'hidden', }}>
         <Title>React Hooks <SmileOutlined style={{ fontSize: '32px' }} /></Title>
         <Menu onClick={() => navigate('/articles')} mode="horizontal" items={items}></Menu>
-
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="1. Usage of UseState:" size="small">
@@ -39,7 +38,7 @@ function Dashboard({ navigate }) {
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="2. Usage of UseState:" size="small">
+          <Card title="2. Usage of UseEffect:" size="small">
             <HookUseEffect />
           </Card>
         </Space>
@@ -50,10 +49,14 @@ function Dashboard({ navigate }) {
           color: '#fff',
           minWidth: '540px',
           minHeight: '250px',
+          maxHeight: '600px',
+          overflowY: 'scroll',
           backgroundColor: '#242424',
           borderRadius: '3px'
         }}><CodeOutlined style={{ fontSize: '32px' }} />
+          <span onClick={() => setLogs([])}><StopOutlined style={{ fontSize: '20px', float: 'right', margin: '5px 15px' }} /></span>
           <Console logs={logs} variant="dark" />
+
         </div>
       </Content>
 

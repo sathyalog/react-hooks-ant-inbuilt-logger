@@ -1,13 +1,13 @@
 import React from 'react';
-import { Menu, Badge, Space, Spin } from 'antd';
+import { Menu, Space, Spin } from 'antd';
 import { Layout, Typography } from 'antd';
-import { DashboardOutlined, SmileOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, SmileOutlined } from '@ant-design/icons';
 
 const items = [
   {
     label: 'Dashboard',
     key: 'dashboard',
-    icon: <DashboardOutlined />,
+    icon: <AppstoreOutlined />,
   }]
 const { Content } = Layout;
 const { Title, Text } = Typography;
