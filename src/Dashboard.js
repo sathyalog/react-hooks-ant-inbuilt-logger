@@ -9,6 +9,7 @@ import HookUseContext from './hooks/must-known-hooks/UseContextHook';
 import { useThemeUpdate } from './ThemeContext';
 import HookUseRef from "./hooks/lesser-known-hooks/UseRefHook";
 import HookUseMemo from "./hooks/lesser-known-hooks/UseMemoHook";
+import HookUseCallback from "./hooks/lesser-known-hooks/UseCallbackHook";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -67,6 +68,12 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="5. Usage of UseMemo:" size="small">
             <HookUseMemo />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="6. Usage of UseCallback:" size="small">
+            <HookUseCallback />
           </Card>
         </Space>
         <Divider />
