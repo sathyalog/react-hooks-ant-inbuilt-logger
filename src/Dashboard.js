@@ -10,6 +10,8 @@ import { useThemeUpdate } from './ThemeContext';
 import HookUseRef from "./hooks/lesser-known-hooks/UseRefHook";
 import HookUseMemo from "./hooks/lesser-known-hooks/UseMemoHook";
 import HookUseCallback from "./hooks/lesser-known-hooks/UseCallbackHook";
+import HookUseReducer from "./hooks/lesser-known-hooks/UseReducerHook";
+import HookUseReducerComplex from "./hooks/lesser-known-hooks/UseReducerHookComplex";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -74,6 +76,18 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="6. Usage of UseCallback:" size="small">
             <HookUseCallback />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="7. Simple Usage of UseReducer:" size="small">
+            <HookUseReducer />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="8. Complex Usage of UseReducer:" size="small">
+            <HookUseReducerComplex />
           </Card>
         </Space>
         <Divider />
