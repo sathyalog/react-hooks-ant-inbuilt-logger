@@ -8,6 +8,7 @@ import HookUseEffect from './hooks/must-known-hooks/UseEffectHook';
 import HookUseContext from './hooks/must-known-hooks/UseContextHook';
 import { useThemeUpdate } from './ThemeContext';
 import HookUseRef from "./hooks/lesser-known-hooks/UseRefHook";
+import HookUseMemo from "./hooks/lesser-known-hooks/UseMemoHook";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -60,6 +61,12 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="4. Usage of UseRef:" size="small">
             <HookUseRef />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="5. Usage of UseMemo:" size="small">
+            <HookUseMemo />
           </Card>
         </Space>
         <Divider />

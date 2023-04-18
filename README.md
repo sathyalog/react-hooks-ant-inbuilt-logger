@@ -18,8 +18,8 @@ Has inbuilt console logger in dashboard and syntax highlighter to view the code.
 
 we will cover in the following fashion..
 
-1. Must Known Hooks
-2. Lesser Used Hooks
+1. Must Known Hooks - useState, useEffect, useContext
+2. Lesser Used Hooks - useRef, useMemo
 3. Optional Hooks
 4. Custom Hooks
 5. Experimental Hooks
