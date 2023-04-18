@@ -44,6 +44,10 @@ function Articles({navigate}) {
                     <Spin/><Text type="danger">useReducer hook</Text>-
                     <Link href="https://blog.webdevsimplified.com/2020-06/use-reducer/" target="_blank">useReducer</Link>
                 </Space><br/>
+                <Space>
+                    <Spin/><Text type="danger">useTransition hook</Text>-
+                    <Link href="https://blog.webdevsimplified.com/2022-04/use-transition/" target="_blank">useTransition</Link>
+                </Space><br/>
 
             </Content>
 

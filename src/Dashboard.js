@@ -7,11 +7,12 @@ import HookUseState from './hooks/must-known-hooks/UseStateHook';
 import HookUseEffect from './hooks/must-known-hooks/UseEffectHook';
 import HookUseContext from './hooks/must-known-hooks/UseContextHook';
 import { useThemeUpdate } from './ThemeContext';
-import HookUseRef from "./hooks/lesser-known-hooks/UseRefHook";
-import HookUseMemo from "./hooks/lesser-known-hooks/UseMemoHook";
-import HookUseCallback from "./hooks/lesser-known-hooks/UseCallbackHook";
-import HookUseReducer from "./hooks/lesser-known-hooks/UseReducerHook";
-import HookUseReducerComplex from "./hooks/lesser-known-hooks/UseReducerHookComplex";
+import HookUseRef from "./hooks/lesser-used-hooks/UseRefHook";
+import HookUseMemo from "./hooks/lesser-used-hooks/UseMemoHook";
+import HookUseCallback from "./hooks/lesser-used-hooks/UseCallbackHook";
+import HookUseReducer from "./hooks/lesser-used-hooks/UseReducerHook";
+import HookUseReducerComplex from "./hooks/lesser-used-hooks/UseReducerHookComplex";
+import HookUseTransition from "./hooks/lesser-used-hooks/UseTransitionHook";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -44,50 +45,56 @@ function Dashboard({ navigate }) {
         <Menu onClick={() => navigate('/articles')} mode="horizontal" items={items}></Menu>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="1. Usage of UseState:" size="small">
+          <Card title="1. Usage of useState:" size="small">
             <HookUseState />
           </Card>
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="2. Usage of UseEffect:" size="small">
+          <Card title="2. Usage of useEffect:" size="small">
             <HookUseEffect />
           </Card>
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="3. Usage of UseContext:" size="small">
+          <Card title="3. Usage of useContext:" size="small">
             <HookUseContext />
           </Card>
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="4. Usage of UseRef:" size="small">
+          <Card title="4. Usage of useRef:" size="small">
             <HookUseRef />
           </Card>
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="5. Usage of UseMemo:" size="small">
+          <Card title="5. Usage of useMemo:" size="small">
             <HookUseMemo />
           </Card>
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="6. Usage of UseCallback:" size="small">
+          <Card title="6. Usage of useCallback:" size="small">
             <HookUseCallback />
           </Card>
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="7. Simple Usage of UseReducer:" size="small">
+          <Card title="7. Simple Usage of useReducer:" size="small">
             <HookUseReducer />
           </Card>
         </Space>
         <Divider />
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Card title="8. Complex Usage of UseReducer:" size="small">
+          <Card title="8. Complex Usage of useReducer:" size="small">
             <HookUseReducerComplex />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="9. Usage of useTransition:" size="small">
+            <HookUseTransition />
           </Card>
         </Space>
         <Divider />
