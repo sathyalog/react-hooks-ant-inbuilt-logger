@@ -52,7 +52,10 @@ function Articles({navigate}) {
                     <Spin/><Text type="danger">useDeferredValue hook</Text>-
                     <Link href="https://blog.webdevsimplified.com/2022-05/use-deferred-value/" target="_blank">useDeferredValue</Link>
                 </Space><br/>
-
+                <Space>
+                    <Spin/><Text type="danger">useLayoutEffect hook</Text>-
+                    <Link href="https://blog.webdevsimplified.com/2020-07/use-layout-effect/" target="_blank">useLayoutEffect</Link>
+                </Space><br/>
                 Some Simple Tips:
                 <div>
                     useEffect will run after useMemo since useEffect runs asynchronously after your component is finished executing. useMemo runs inline as your component is executing.
