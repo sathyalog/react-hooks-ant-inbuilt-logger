@@ -13,6 +13,7 @@ import HookUseCallback from "./hooks/lesser-used-hooks/UseCallbackHook";
 import HookUseReducer from "./hooks/lesser-used-hooks/UseReducerHook";
 import HookUseReducerComplex from "./hooks/lesser-used-hooks/UseReducerHookComplex";
 import HookUseTransition from "./hooks/lesser-used-hooks/UseTransitionHook";
+import HookUseDeferredValue from "./hooks/lesser-used-hooks/UseDeferredValueHook";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -95,6 +96,12 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="9. Usage of useTransition:" size="small">
             <HookUseTransition />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="10. Usage of useDeferredValue:" size="small">
+            <HookUseDeferredValue />
           </Card>
         </Space>
         <Divider />
