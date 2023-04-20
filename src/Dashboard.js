@@ -15,6 +15,7 @@ import HookUseReducerComplex from "./hooks/lesser-used-hooks/UseReducerHookCompl
 import HookUseTransition from "./hooks/lesser-used-hooks/UseTransitionHook";
 import HookUseDeferredValue from "./hooks/lesser-used-hooks/UseDeferredValueHook";
 import HookUseLayoutEffect from "./hooks/optional-hooks/UseLayoutEffectHook";
+import HookUseDebugValue from "./hooks/optional-hooks/UseDebugValueHook";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -109,6 +110,12 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="11. Usage of useLayoutEffect:" size="small">
             <HookUseLayoutEffect/>
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="12. Usage of useDebugValue:" size="small">
+            <HookUseDebugValue/>
           </Card>
         </Space>
 

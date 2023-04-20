@@ -56,6 +56,10 @@ function Articles({navigate}) {
                     <Spin/><Text type="danger">useLayoutEffect hook</Text>-
                     <Link href="https://blog.webdevsimplified.com/2020-07/use-layout-effect/" target="_blank">useLayoutEffect</Link>
                 </Space><br/>
+                <Space>
+                    <Spin/><Text type="danger">useDebugValue hook</Text>-
+                    <Link href="https://blog.webdevsimplified.com/2021-11/use-debug-value/" target="_blank">useDebugValue</Link>
+                </Space><br/>
                 Some Simple Tips:
                 <div>
                     useEffect will run after useMemo since useEffect runs asynchronously after your component is finished executing. useMemo runs inline as your component is executing.
