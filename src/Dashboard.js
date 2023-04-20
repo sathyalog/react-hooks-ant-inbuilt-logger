@@ -16,6 +16,8 @@ import HookUseTransition from "./hooks/lesser-used-hooks/UseTransitionHook";
 import HookUseDeferredValue from "./hooks/lesser-used-hooks/UseDeferredValueHook";
 import HookUseLayoutEffect from "./hooks/optional-hooks/UseLayoutEffectHook";
 import HookUseDebugValue from "./hooks/optional-hooks/UseDebugValueHook";
+import HookUseImperativeHandle from "./hooks/optional-hooks/UseImperativeHandleHook"
+import HookUseId from "./hooks/optional-hooks/UseId";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -118,7 +120,18 @@ function Dashboard({ navigate }) {
             <HookUseDebugValue/>
           </Card>
         </Space>
-
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="13. Usage of useImperativeHandle:" size="small">
+            <HookUseImperativeHandle />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="14. Usage of useId:" size="small">
+            <HookUseId />
+          </Card>
+        </Space>
         <Divider />
         <Alert message="Console logger" type="info" />
         <div style={{
