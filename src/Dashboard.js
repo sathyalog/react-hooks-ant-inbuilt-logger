@@ -19,6 +19,7 @@ import HookUseDebugValue from "./hooks/optional-hooks/UseDebugValueHook";
 import HookUseImperativeHandle from "./hooks/optional-hooks/UseImperativeHandleHook"
 import HookUseId from "./hooks/optional-hooks/UseId";
 import CustomHookUseLocalStorage from "./hooks/custom-hooks/UseLocalStorageHook";
+import ToggleComponent from "./hooks/custom-hooks/ToggleComponent";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -137,6 +138,12 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="14. Usage of Custom Hook useLocalStorage:" size="small">
             <CustomHookUseLocalStorage />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="15. Usage of Custom Hook useToggle:" size="small">
+            <ToggleComponent />
           </Card>
         </Space>
         <Divider />
