@@ -18,6 +18,7 @@ import HookUseLayoutEffect from "./hooks/optional-hooks/UseLayoutEffectHook";
 import HookUseDebugValue from "./hooks/optional-hooks/UseDebugValueHook";
 import HookUseImperativeHandle from "./hooks/optional-hooks/UseImperativeHandleHook"
 import HookUseId from "./hooks/optional-hooks/UseId";
+import CustomHookUseLocalStorage from "./hooks/custom-hooks/UseLocalStorageHook";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -130,6 +131,12 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="14. Usage of useId:" size="small">
             <HookUseId />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="14. Usage of Custom Hook useLocalStorage:" size="small">
+            <CustomHookUseLocalStorage />
           </Card>
         </Space>
         <Divider />
