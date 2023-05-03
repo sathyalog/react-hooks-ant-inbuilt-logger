@@ -1,10 +1,20 @@
 import {useState} from "react";
-import { Button, Collapse } from 'antd';
+import {  Collapse } from 'antd';
 import useTimeout from "./useTimeout";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const codeString = `
+    useTimeout()
+    Very similar to the useInterval hook, this React hook implements the native setTimeout function keeping the same interface.
+    You can enable the timeout by setting delay as a number or disabling it using null.
+    When the time finishes, the callback function is called.
+
+    Create a custom hook that takes a callback and a delay.
+    Use the useRef() hook to create a ref for the callback function.
+    Use the useEffect() hook to remember the latest callback.
+    Use the useEffect() hook to set up the timeout and clean up.
+
     useTimeout.js:
     import {useEffect, useRef} from "react";
 
