@@ -20,6 +20,7 @@ import HookUseImperativeHandle from "./hooks/optional-hooks/UseImperativeHandleH
 import HookUseId from "./hooks/optional-hooks/UseId";
 import CustomHookUseLocalStorage from "./hooks/custom-hooks/UseLocalStorageHook";
 import ToggleComponent from "./hooks/custom-hooks/ToggleComponent";
+import TimeoutComponent from "./hooks/custom-hooks/TimeoutComponent";
 const { Title, Text } = Typography;
 const { Content } = Layout;
 
@@ -144,6 +145,12 @@ function Dashboard({ navigate }) {
         <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
           <Card title="15. Usage of Custom Hook useToggle:" size="small">
             <ToggleComponent />
+          </Card>
+        </Space>
+        <Divider />
+        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
+          <Card title="16. Usage of Custom Hook useTimeout:" size="small">
+            <TimeoutComponent />
           </Card>
         </Space>
         <Divider />
